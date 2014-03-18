@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Parallax.js | jQuery Example</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+
+</head>
+<body>
+
+	<div id="container" class="wrapper">
+		<ul id="scene" class="scene" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="20" data-scalar-y="10"  >
+			
+			
+			
+		
+			
+		
+			<li class="layer" data-depth="0.0" ><div class="background"></div></li>
+			<li class="layer" data-depth="0.05" ><div class="gradient"></div></li>
+			
+			<li class="layer" data-depth="0.10" >
+				<div class="grass depth-10"></div>
+			</li>
+			
+
+			<li class="layer" data-depth="0.20" >
+				<div class="grass depth-20"></div>
+			</li>
+			<li class="layer" data-depth="0.30" >
+				<ul class="rope depth-30">
+					<li><img src="images/rope.png" alt="Rope"></li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.30" >
+				<div class="grass depth-30"></div>
+			</li>
+
+				<li class="layer" data-depth="0.40" >
+				<div class="grass depth-40"></div>
+			</li>
+
+				<li class="layer" data-depth="0.50" >
+				<div class="grass depth-50"></div>
+			</li>
+			<li class="layer" data-depth="0.60" >
+				<div class="grass depth-60"></div>
+			</li>
+			
+			<li class="layer" data-depth="0.60" >
+				<ul class="rope depth-60">
+					<li><img src="images/rope.png" alt="Rope"></li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.70" >
+				<div class="grass depth-70"></div>
+			</li>
+			<li class="layer" data-depth="0.80" >
+				<div class="grass depth-80"></div>
+			</li>
+			<li class="layer" data-depth="0.90" >
+				<div class="grass depth-90"></div>
+			</li>
+
+			
+		</ul>
+	</div>
+
+	<!-- Scripts -->
+	<script src="scripts/jquery.js"></script>
+	<script src="../deploy/jquery.parallax.js"></script>
+	<script>
+
+	// Yep, that's it!
+	$('#scene').parallax();
+
+	</script>
+
+</body>
+</html>
